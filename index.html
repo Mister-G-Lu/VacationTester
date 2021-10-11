@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VACATION PLANNER</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Example:
+	 function myFunction() {
+            //This performs a POST-Request.
+            //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
+            //The Browser downloads the webpage from the given url, and returns the data.
+            $.post( "http://hostserver.com/MEApp/MEService", function( data ) {
+                 //As soon as the browser finished downloading, this function is called.
+                 $('#demo').html(data);
+            });
+        }
+     -->
+	<script>
+		function display(){
+       //TODO: Make this dynamic.
+			  document.getElementById("cityinfo").innerHTML = "Washington DC";
+        const val =  document.getElementById("distance").value
+        document.getElementById("cityinfo").append(" -- You selected " + val);
+
+		}
+	</script>
+</head>
+<body>
+	<header>
+    <div style="background: url(https://www.pngmagic.com/product_images/solid-light-blue-background.jpg)" class="background">
+		<div class="header">
+			<h1>My Vacation Planner</h1>
+			<h1 style="font-size:2vw">Explore the DMV</h1>
+		</div>
+    </div>
+	</header>
+
+		<div class="box">
+			<div class="search">
+  			<input type="text" placeholder="Where to: Enter zip code or city">
+			</div>
+		</div>
+		<div class="filters">
+			<label for="distance">Distance:</label>
+			<select name="distance" id="distance">
+				<option value="any" selected>Any</option>
+				<option value="ten-miles">10 miles</option>
+				<option value="twentyfive-miles">25 miles</option>
+				<option value="fifty-miles">50 miles</option>
+				<option value="hundred-miles">100 miles</option>
+			</select>
+      <br>
+			<label for="crowdedness">Crowd volume:</label>
+			<select name="crowdedness" id="crowdedness">
+				<option value="any" selected>Any</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="20">10</option>
+			</select>
+      <br>
+			<label for="vacation">Type of vacation spot:</label>
+			<select name="vacation" id="vacation">
+				<option value="any" selected>Any</option>
+				<option value="beach">Beach</option>
+				<option value="historical">Historical</option>
+				<option value="mountains">Mountains</option>
+			</select>
+      <br>
+			<button id="button" onclick ="display()" style='font-size:large'>Go!</button>
+		</div>
+		<div class="recommended">
+			<h2>Recommended</h2>
+			<p id = "cityinfo">-- Waiting for input --</p>
+		</div>
+
+<div id="root"></div>
+  <!-- should we call Java instead? -->
+		<script src = "script.js"></script>
+</body>
+</html>

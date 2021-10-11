@@ -1,0 +1,10 @@
+{
+  "DC Monument":{
+  	  "City": "DC",
+     "Crowdedness": 8,
+      "Description": "The Washington Monument is an obelisk within the National Mall in Washington, D.C., built to commemorate George Washington, once commander-in-chief of the Continental Army (1775–1784) in the American Revolutionary War and the first President of the United States (1789–1797).",
+       "Latitude": 38.8895,
+       "Longitude": 77.0353,
+       "Picture": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1600&h=800&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2019%2F07%2Fwashington-monument-dc-WASHMON0719.jpg"
+  }
+}
